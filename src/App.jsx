@@ -8,7 +8,8 @@ import React, { useState } from "react";
  */
 
 // const API_BASE = "http://localhost:4000";
-const API_BASE = "";
+const API_BASE = import.meta.env.DEV ? "http://localhost:4000" : import.meta.env.VITE_API_BASE;
+// const API_BASE = "";
 export default function App() {
   const [text, setText] = useState("");
   const [loading, setLoading] = useState(false);
