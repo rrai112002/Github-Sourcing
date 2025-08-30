@@ -23,7 +23,7 @@ export default function App() {
     setLoading(true);
     setError("");
     try {
-      const res = await fetch(`${API_BASE}/search-plain`, {
+      const res = await fetch(`${API_BASE}/api/search-plain`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ text }),
