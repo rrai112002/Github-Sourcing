@@ -7,8 +7,8 @@ import React, { useState } from "react";
  * If you are NOT using a Vite proxy, set API_BASE = "http://localhost:4000".
  */
 
-const API_BASE = "http://localhost:4000";
-
+// const API_BASE = "http://localhost:4000";
+const API_BASE = "";
 export default function App() {
   const [text, setText] = useState("");
   const [loading, setLoading] = useState(false);
